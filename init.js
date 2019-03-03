@@ -6,7 +6,7 @@ const db = 'mongodb://localhost/camera-shop';// 默认端口27017
 const glob = require('glob');
 const path = require('path');
 exports.initSchemas = () => {
-    glob.sync(path.resolve(__dirname)).forEach(require);//获取当前项目的绝对地址
+    glob.sync(path.resolve(__dirname, './model', '*.js')).forEach(require);//获取当前项目的绝对地址
 
 }
 
