@@ -10,7 +10,7 @@ exports.initSchemas = () => {
 
 }
 
-
+// 连接数据库
 exports.connect = () => {
     // 连接数据库
     mongoose.connect(db, {userNewUrlParser: true});// 解析URL

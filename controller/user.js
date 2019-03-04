@@ -20,12 +20,6 @@ router.post('/registUser', async (ctx) => {
             message: err
         }
     })
-
-
-
-
-    console.log('sucess');
-    ctx.body = 'sucess';
 })
 
 module.exports = router;// 导出
